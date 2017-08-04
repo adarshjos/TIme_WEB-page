@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<title></title>
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+function showtime(){
+	var d1 = new Date();
+	var d2 = new Date("1997/07/24");
+	var diff = Math.abs(d1-d2);
+	document.getElementById('time').innerHTML=diff/31536000000;
+  setTimeout(showtime,100);
+}
+showtime();
+}
+</script>
+<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+<style type="text/css">
+#time{
+  position: absolute;
+      letter-spacing: 3px;
+  top: 50%;
+  left: 40%;
+  font-size: 70px;
+ font-family: 'Orbitron';
+ text-shadow: 3px 2px red;
+color:white;
+}
+</style>
+</head>
+<body>
+    <style>
+body {
+    background-image: url("a.jpg");
+}
+</style>
+  <h3 id="time"></h3>
+</body>
+</html>
